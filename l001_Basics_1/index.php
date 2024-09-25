@@ -15,9 +15,9 @@ echo '<br />';
 $title = 'Learn PHP';
 // Data Types ----------------------------------------------------------
 $name = 'Lenny';
-var_dump($name); # gives data types
+var_dump($name); // gives data types
 echo '<br />';
-echo getType($name); # gives data type
+echo getType($name); // gives data type
 $age = 52;
 echo '<br />';
 var_dump($age);
@@ -37,20 +37,68 @@ echo '<br />';
 $car = null;
 var_dump($car);
 echo '<br />';
-# Resource - data type - this can be something like a file 
+// Resource - data type - this can be something like a file 
 $shopping_list = fopen('resource.txt', 'r');
 var_dump($shopping_list);
 echo '<br />';
-# String and String Concatenation -----------------------------------------
+// String and String Concatenation -----------------------------------------
 $firstname = 'Bob';
 $lastname = 'Jones';
-$fullname = $firstname . $lastname; # the . concats the strings. JS uses +
+$fullname = $firstname . $lastname; // the . concats the strings. JS uses +
 echo $fullname;
 echo '<br />';
 $fullname2 = $firstname . ' ' . $lastname;
 echo $fullname2;
 echo '<br />';
-# Don't need below tag in a pure PHP file.
+// Type casting and Juggling ----------------------------------------------
+$num1 = 5;
+$num2 = 10;
+$num3 = '20';
+// Implicit - PHP changes the data type
+$result = $num1 + $num2;
+$result = $num1 + $num3; // PHP converts $num3 into an int - Implicit
+$res_2 = $num3 + $num3; // PHP treats both string numbers as ints - Implicit
+var_dump($result);
+echo '<br />';
+var_dump($res_2);
+echo '<br />';
+$res_3 = $num1 . $num2; // concat two ints
+$res_4 = $num1 . $num3; // concat one int and one string
+var_dump($res_3);
+echo '<br />'; // PHP treats both int numbers as strings - Implicit 
+var_dump($res_4); // PHP converts $num1 into a string - Implicit
+echo '<br />';
+$fruit = 'orange';
+/* NOT ALLOWED!!!!! FATAL ERROR
+$res_5 = $fruit + $num1;
+var_dump($res_5);
+echo '<br />';
+*/
+$bool1 = true;
+$bool2 = false;
+$null = null;
+$res_6 = $num1 + $bool1; // returns int(6) - true = 1
+var_dump($res_6);
+echo '<br />';
+$res_7 = $num1 + $bool2; // returns int(5) - false = 0
+var_dump($res_7);
+echo '<br />';
+$res_8 = $num1 + $null; // returns int(5) - null = 0
+var_dump($res_8);
+echo '<br />';
+// Explict conversion - you change data type
+$num4 = -7;
+$num5 = 0;
+$res_9 = (string) $num4; // explict conversion by user - int to string
+var_dump($res_9);
+echo '<br />';
+$res_10 = (bool) $num4; // bool conversion - any number except 0 is true
+var_dump($res_10); 
+echo '<br />';
+$res_11 = (bool) $num5; // boo; conversion - only 0 is false
+var_dump($res_11);
+echo '<br />';
+// Don't need below tag in a pure PHP file.
 ?>
 
 <!DOCTYPE html>
@@ -91,7 +139,7 @@ echo '<br />';
                 <li>Variables</li>
                 <li>Data Types - String, Integer, Float, Boolean, Array, Object, Null, Resource</li>
                 <li>Strings and Concatenation</li>
-                <li></li>
+                <li>Type Casting and Juggling</li>
                 <li></li>
                 <li></li>
                 <li></li>
