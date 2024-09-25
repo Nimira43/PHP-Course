@@ -1,3 +1,27 @@
+<?php 
+$num1 = 28;
+$num2 = 7;
+$num3 = 8;
+$num4 = 13;
+
+$res1 = "$num1 + $num2 = " . $num1 + $num2;
+echo $res1;
+echo '<br />';
+$res2 = "$num1 - $num2 = " . $num1 - $num2;
+echo $res2;
+echo '<br />';
+$res3 = "$num1 * $num2 = " . $num1 * $num2;
+echo $res3;
+echo '<br />';
+$res4 = "$num1 / $num2 = " . $num1 / $num2;
+echo $res4;
+echo '<br />';
+$res5 = "$num1 % $num4 = " . $num1 % $num4;
+echo $res5;
+echo '<br />';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +50,7 @@
   <div class="container mx-auto p-2 mt-4 bg-[#87ceeb] text-[#111]">
     <div class="p-2 border-2 border-[#111] mb-2">
       <h2 class="bg-[#ff4500]">TOPICS COVERED</h2>
+      <p>Arithmetic Operators & Functions</p>
     </div>
     <div class="p-2 border-2 border-[#111] mb-2">
       <h2 class="bg-[#ff4500]">NOTES</h2>
