@@ -12,7 +12,7 @@ echo '<br />';
     Comment
     */
 // Variables -----------------------------------------------------------
-$title = 'Learn PHP';
+$title = 'Learn PHP - 1';
 // Data Types ----------------------------------------------------------
 $name = 'Lenny';
 var_dump($name); // gives data types
@@ -140,11 +140,6 @@ echo '<br />';
                 <li>Data Types - String, Integer, Float, Boolean, Array, Object, Null, Resource</li>
                 <li>Strings and Concatenation</li>
                 <li>Type Casting and Juggling</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
             </ul>
             <div>
                 <h2 class="bg-[#ff4500]">OUTPUT DEMOS</h2>
