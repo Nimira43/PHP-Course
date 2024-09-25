@@ -11,9 +11,9 @@ echo '<br />';
     Line
     Comment
     */
-// Variables
+// Variables -----------------------------------------------------------
 $title = 'Learn PHP';
-// Data Types
+// Data Types ----------------------------------------------------------
 $name = 'Lenny';
 var_dump($name); # gives data types
 echo '<br />';
@@ -41,9 +41,17 @@ echo '<br />';
 $shopping_list = fopen('resource.txt', 'r');
 var_dump($shopping_list);
 echo '<br />';
-
+# String and String Concatenation -----------------------------------------
+$firstname = 'Bob';
+$lastname = 'Jones';
+$fullname = $firstname . $lastname; # the . concats the strings. JS uses +
+echo $fullname;
+echo '<br />';
+$fullname2 = $firstname . ' ' . $lastname;
+echo $fullname2;
+echo '<br />';
 # Don't need below tag in a pure PHP file.
-?> 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -72,16 +80,17 @@ echo '<br />';
     </header>
     <div class="container mx-auto p-2 mt-4 bg-[#87ceeb] text-[#111]">
         <div>
+            <h2 class="bg-[#ff4500]">NOTES</h2>
             <p>Anything in the PHP tags is rendered by the Server</p>
             <p><?php echo 'Using echo to print out something to the screen'; ?></p>
             <p><?= 'This is the shorthand PHP echo tag'; ?></p>
             <?php echo '<h1>Using HTML tags within PHP echo.</h1>'; ?>
-            <h2>TOPICS COVERED</h2>
+            <h2 class="bg-[#ff4500]">TOPICS COVERED</h2>
             <ul>
                 <li>Tags, Printing and Comments</li>
                 <li>Variables</li>
-                <li>Data Types - String, Ineger, Float, Boolean, Array, Object, Null, Resource</li>
-                <li></li>
+                <li>Data Types - String, Integer, Float, Boolean, Array, Object, Null, Resource</li>
+                <li>Strings and Concatenation</li>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -89,6 +98,13 @@ echo '<br />';
                 <li></li>
                 <li></li>
             </ul>
+            <div>
+                <h2 class="bg-[#ff4500]">OUTPUT DEMOS</h2>
+                <?= $fullname ?><br />
+                <?= 'Hello there ' . $fullname2 . '<br />' ?>
+                <?= "Hello there $fullname2" ?><br />
+                <?= 'Isn\'t it. Ain\'t it. She\'s here. Escapin\' characters' ?><br />
+            </div>
         </div>
     </div>
 </body>
