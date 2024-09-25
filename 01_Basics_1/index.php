@@ -95,7 +95,7 @@ echo '<br />';
 $res_10 = (bool) $num4; // bool conversion - any number except 0 is true
 var_dump($res_10); 
 echo '<br />';
-$res_11 = (bool) $num5; // boo; conversion - only 0 is false
+$res_11 = (bool) $num5; // bool; conversion - only 0 is false
 var_dump($res_11);
 echo '<br />';
 // Don't need below tag in a pure PHP file.

@@ -24,9 +24,13 @@
     </div>
   </header>
   <div class="container mx-auto p-2 mt-4 bg-[#87ceeb] text-[#111]">
-    <div>
+    <div class="p-2 border-2 border-[#111] mb-2">
       <h2 class="bg-[#ff4500]">TOPICS COVERED</h2>
+    </div>
+    <div class="p-2 border-2 border-[#111] mb-2">
       <h2 class="bg-[#ff4500]">NOTES</h2>
+    </div>
+    <div class="p-2 border-2 border-[#111]">
       <h2 class="bg-[#ff4500]">OUTPUT DEMOS</h2>
     </div>
   </div>
