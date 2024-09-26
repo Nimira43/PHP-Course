@@ -1,7 +1,7 @@
-<?php 
+<?php
 $num1 = 28;
 $num2 = 7;
-$num3 = 8;
+$num3 = 8.543;
 $num4 = 13;
 
 $res1 = "$num1 + $num2 = " . $num1 + $num2;
@@ -19,6 +19,42 @@ echo '<br />';
 $res5 = "$num1 % $num4 = " . $num1 % $num4;
 echo $res5;
 echo '<br />';
+# Assignment Operator
+$num5 = 10;
+$num5 += 20;   // also: -=   *=   /=
+echo $num5;
+echo '<br />';
+// Functions
+echo $num6 = rand(); // random number
+echo '<br />';
+echo $num7 = getrandMax(); // maximum random number
+echo '<br />';
+echo $num8 = rand(1, 20); // random number between 1 and 20
+echo '<br />';
+echo $num9 = round(4.7); // rounds number
+echo '<br />';
+echo $num10 = round($num3); // rounds number using variable
+echo '<br />';
+echo $num11 = ceil(4.2); // rounds number up always
+echo '<br />';
+echo $num12 = floor(4.99999); // rounds number down always
+echo '<br />';
+echo $num14 = sqrt(35); // square root
+echo '<br />';
+echo $num15 = pi() * $num2; // pi
+echo '<br />';
+echo $num16 = abs(-56); // absolute number - always a positive number
+echo '<br />';
+echo $num17 = max([43, 95, -3, 53, 25, 86, 36]); // finds highest number
+echo '<br />';
+echo $num18 = min(43, 95, -3, 53, 25, 86, 36); // finds lowest number
+echo '<br />';
+echo number_format(1234567.174335, 2, '.', ','); // see note below 
+echo '<br />';
+echo number_format(433455.599443, 2, '.', ','); // see note below
+echo '<br />';
+
+
 
 ?>
 
@@ -54,6 +90,8 @@ echo '<br />';
     </div>
     <div class="p-2 border-2 border-[#111] mb-2">
       <h2 class="bg-[#ff4500]">NOTES</h2>
+      <p>With max() you can list numbers without the [] - max(5, 8, 2, 7). In the above example I used the [] inside of max(). Same goes for min().</p>
+      <p>Number Format - arguments (decimal number, decimal places, decimal separator, thousands separator) - eg number_format(433455.599443, 2, '.', ',') which would return 433,455.60</p>
     </div>
     <div class="p-2 border-2 border-[#111]">
       <h2 class="bg-[#ff4500]">OUTPUT DEMOS</h2>
