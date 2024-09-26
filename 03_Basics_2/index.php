@@ -53,7 +53,10 @@ echo number_format(1234567.174335, 2, '.', ','); // see note below
 echo '<br />';
 echo number_format(433455.599443, 2, '.', ','); // see note below
 echo '<br />';
-
+// String Functions
+$string = "McLaren is my favourite Formula One team";
+echo strlen($string); // length of stringr
+echo '<br />';
 
 
 ?>
@@ -87,10 +90,11 @@ echo '<br />';
     <div class="p-2 border-2 border-[#111] mb-2">
       <h2 class="bg-[#ff4500]">TOPICS COVERED</h2>
       <p>Arithmetic Operators & Functions</p>
+      <p>String Functions</p>
     </div>
     <div class="p-2 border-2 border-[#111] mb-2">
       <h2 class="bg-[#ff4500]">NOTES</h2>
-      <p>With max() you can list numbers without the [] - max(5, 8, 2, 7). In the above example I used the [] inside of max(). Same goes for min().</p>
+      <p>With max() you can list numbers without the [] - max(5, 8, 2, 7). In the top example I used the [] inside of max(). Same goes for min().</p>
       <p>Number Format - arguments (decimal number, decimal places, decimal separator, thousands separator) - eg number_format(433455.599443, 2, '.', ',') which would return 433,455.60</p>
     </div>
     <div class="p-2 border-2 border-[#111]">
